@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+In HTML, all global variables will become window variables.
+</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+document.getElementById("demo").innerHTML = 
+"I can display " + window.carName;
+
+function myFunction(){
+  carName = "Volvo";
+}
+</script>
+
+</body>
+</html>
