@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Never create number as objects.</p>
+<p>Numbers and objects cannot be safely compared.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 500;                // x is a number
+var y = new Number(500)     // y is an object
+document.getElementById("demo").innerHTML = (x===y);
+</script>
+
+</body>
+</html>
